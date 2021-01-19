@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pricesFragment">
+
+    <fragment
+        android:id="@+id/pricesFragment"
+        android:name="com.stroescumarius.customviewexercises.PricesFragment"
+        android:label="fragment_prices"
+        tools:layout="@layout/fragment_prices" >
+        <action
+            android:id="@+id/action_pricesFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.stroescumarius.customviewexercises.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.stroescumarius.customviewexercises.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
